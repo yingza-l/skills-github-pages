@@ -1,4 +1,20 @@
-theme: minima
+# 网站的基本设置
 title: myfirstweb
-auther: yingza
-description: 开源大作业
+author: yingza
+description: 开源大作业，这个是我目前的 Jekyll 博客配置文件
+
+# 网站的基础 URL 和路径
+url: "https://yingza-l.github.io/skills-github-pages/"  # 替换为你的 GitHub Pages URL
+baseurl: "skills-github-pages"  # 如果你的仓库名称为 `myfirstweb`，baseurl 应该为空
+
+# Jekyll 主题
+theme: minima
+
+# 页面配置
+paginate: 5  # 每页显示 5 篇文章
+paginate_path: "/page:num/"  # 分页路径
+
+
+social_links:
+  github: "https://github.com/yingza-l"  # 替换为你的 GitHub 链接
+
