@@ -6,25 +6,37 @@
   <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="author" content="{{ site.author }}">
   <title>{{ page.title | default: site.title }} - {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}"> <!-- 引入自定义样式 -->
+  <link rel="stylesheet" href="{{ "_posts/assets/css/style.css" | relative_url }}">
 </head>
 <body>
+
+  <!-- 头部 -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="{{ site.baseurl }}/">首页</a></li>
-        <li><a href="{{ site.baseurl }}/about">关于</a></li>
-        <li><a href="{{ site.baseurl }}/contact">联系</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1><a href="{{ site.baseurl }}/" class="logo">我的博客</a></h1>
+      <nav>
+        <ul>
+          <li><a href="{{ site.baseurl }}/">首页</a></li>
+          <li><a href="{{ site.baseurl }}/about">关于</a></li>
+          <li><a href="{{ site.baseurl }}/contact">联系</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <!-- 主体内容 -->
   <main>
-    {{ content }} <!-- 渲染页面内容 -->
+    <div class="container">
+      {{ content }} <!-- 渲染页面内容 -->
+    </div>
   </main>
 
+  <!-- 页脚 -->
   <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.author }}. 版权所有。</p>
+    <div class="container">
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.author }}. 版权所有。</p>
+    </div>
   </footer>
+
 </body>
 </html>
