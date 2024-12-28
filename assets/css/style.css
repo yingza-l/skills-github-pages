@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9;  /* 背景色：浅灰色 */
-  color: #333;  /* 文字颜色 */
+  background-color: #f4f4f9;  /* 页面背景色 */
+  color: #333;  /* 页面文字颜色 */
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -23,8 +23,8 @@ main {
 
 /* 头部样式 */
 header {
-  background-color: #333;
-  color: white;
+  background-color: #333;  /* 头部背景色 */
+  color: white;  /* 头部文字颜色 */
   padding: 20px 0;
   position: fixed;
   top: 0;
@@ -51,7 +51,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: white;  /* 导航文字颜色 */
   text-decoration: none;
   font-size: 1.1em;
   padding: 10px 15px;
@@ -60,13 +60,13 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #007bff;  /* 悬停时背景色 */
-  color: white;
+  color: white;  /* 悬停时文字颜色 */
 }
 
 /* 页脚样式 */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #333;  /* 页脚背景色 */
+  color: white;  /* 页脚文字颜色 */
   padding: 20px 0;
   text-align: center;
   margin-top: 50px;
@@ -74,9 +74,9 @@ footer {
 
 footer p {
   font-size: 1em;
-  color: white;
-  margin: 0; /* 清除默认的 margin */
-  padding: 10px 0; /* 增加内边距 */
+  color: white;  /* 确保页脚文字是白色的 */
+  margin: 0;
+  padding: 10px 0;
 }
 
 /* 响应式设计 */
