@@ -1,15 +1,39 @@
 /* 通用样式 */
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9; /* 背景颜色 */
-  color: #333; /* 字体颜色 */
+  background-color: #f4f4f9; /* 页面背景色 */
+  color: #333; /* 页面文字颜色 */
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 确保页面高度至少为视口高度 */
+}
+
+.container {
+  max-width: 800px; /* 设置最大宽度 */
+  margin: 0 auto; /* 居中 */
+  padding: 20px; /* 添加内边距 */
+}
+
+/* 主体内容 */
+main {
+  flex-grow: 1; /* 主体内容区占据剩余空间 */
+  margin-top: 80px; /* 确保不被头部遮挡 */
+  padding: 20px;
+  background-color: #f9f9fc; /* 背景颜色略微浅一些 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加轻微阴影 */
+  border-radius: 8px; /* 边角圆滑 */
 }
 
 /* 头部样式 */
 header {
-  position: fixed; /* 固定头部 */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -21,24 +45,18 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-}
-
-
-header .logo {
-  font-size: 1.8em; /* 标题字体大小 */
-  font-weight: bold;
-  margin: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 添加阴影 */
 }
 
 header .logo a {
   color: white;
   text-decoration: none;
+  font-size: 1.8em;
+  font-weight: bold;
 }
 
 header nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   gap: 20px; /* 菜单项间距 */
 }
@@ -48,29 +66,58 @@ header nav ul li a {
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 5px;
-  font-size: 1em;
 }
 
 header nav ul li a:hover {
   background-color: #007bff;
-  color: white;
-}
-
-/* 主体内容 */
-main {
-  margin-top: 80px; /* 确保内容不会被头部遮挡 */
-  padding: 20px;
 }
 
 /* 页脚样式 */
 footer {
-  background-color: #333;
+  background: linear-gradient(to right, #333, #444); /* 背景渐变 */
   color: white;
   text-align: center;
   padding: 20px 0;
+  border-top: 3px solid #007bff; /* 顶部加一道分隔线 */
 }
 
 footer p {
-  margin: 0;
   font-size: 0.9em;
+  color: white;
+}
+
+footer p span {
+  color: #007bff; /* 版权信息的年份和作者名字突出显示 */
+  font-weight: bold;
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+footer .social-links a:hover {
+  color: #007bff; /* 悬停时高亮 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column; /* 垂直排列菜单项 */
+    gap: 10px;
+  }
+
+  main {
+    margin-top: 100px; /* 为更小屏幕调整顶部间距 */
+  }
+
+  footer .social-links a {
+    font-size: 1em; /* 减小社交图标的大小 */
+  }
 }
