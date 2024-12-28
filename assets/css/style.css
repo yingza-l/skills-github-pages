@@ -15,34 +15,39 @@ body {
   min-height: 100vh;
 }
 
+/* 主体内容 */
 main {
   flex-grow: 1;
-  padding: 20px 0;
-  margin-top: 60px; /* 确保正文内容不被导航栏遮挡 */
+  padding: 20px;
+  margin-top: 60px; /* 确保正文不被 header 遮挡 */
 }
 
+/* 头部样式 */
 header {
   background-color: #333;
   color: white;
-  padding: 20px 0;
+  padding: 0; /* 清除 padding，避免影响布局 */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
-  height: 60px; /* 明确指定导航栏高度 */
+  height: 60px; /* 设置固定高度，便于内容居中 */
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
 }
 
-header .logo {
-  text-decoration: none;
-  color: white;
-  font-size: 2em;
-  font-weight: bold;
+/* 导航样式 */
+nav {
+  position: absolute;
+  right: 20px; /* 导航靠右 */
+  top: 50%;
+  transform: translateY(-50%); /* 垂直居中 */
 }
 
 nav ul {
   list-style-type: none;
-  text-align: right;
 }
 
 nav ul li {
@@ -63,6 +68,7 @@ nav ul li a:hover {
   color: white;
 }
 
+/* 页脚样式 */
 footer {
   background-color: #333;
   color: white;
@@ -78,6 +84,7 @@ footer p {
   padding: 10px 0;
 }
 
+/* 响应式设计 */
 @media (max-width: 768px) {
   header h1 {
     font-size: 1.5em;
