@@ -1,0 +1,132 @@
+/* 重置默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;  /* 背景色：浅灰色 */
+  color: #333;  /* 文字颜色 */
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* 头部样式 */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header .logo {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #007bff;  /* 悬停时背景色 */
+  color: white;
+}
+
+/* 主体内容 */
+main {
+  padding-top: 100px; /* 给固定头部留出空间 */
+}
+
+/* 卡片式设计 */
+.content-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.content-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  /* 鼠标悬停时的阴影效果 */
+}
+
+.content-card h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.content-card p.meta {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.content-card a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.content-card a:hover {
+  text-decoration: underline;
+}
+
+/* 页脚 */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 0.9em;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    text-align: left;
+  }
+
+  nav ul li {
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
