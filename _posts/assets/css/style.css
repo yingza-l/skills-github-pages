@@ -1,43 +1,120 @@
-/* 设置页面的背景颜色 */
+/* 重置一些浏览器默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #f8f9fa;  /* 轻微的灰色背景 */
-  font-family: 'Arial', sans-serif; /* 设置默认字体 */
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;  /* 背景颜色 */
+  color: #333;  /* 文字颜色 */
+  line-height: 1.6;
+  padding-top: 50px;  /* 留出头部空间 */
 }
 
-/* 设置头部标题的样式 */
-h1, h2, h3 {
-  color: #333;  /* 深色标题 */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* 调整文章页面的字体大小和行间距 */
+/* 头部样式 */
+header {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+nav ul li a:hover {
+  color: #007bff;  /* 悬停时变色 */
+}
+
+/* 主体内容 */
+main {
+  padding-top: 80px; /* 给内容留出头部空间 */
+}
+
+main h1, main h2, main h3 {
+  font-weight: bold;
+  color: #343a40;
+}
+
 article {
-  font-size: 1.1em;
-  line-height: 1.8;
-}
-
-/* 文章列表中的每篇文章 */
-article h2 a {
-  color: #007bff;  /* 蓝色的文章链接 */
-  text-decoration: none;
-}
-
-article h2 a:hover {
-  color: #0056b3;  /* 链接悬停时变暗 */
-}
-
-/* 设置页脚的样式 */
-footer {
-  text-align: center;
+  background-color: white;
   padding: 20px;
-  font-size: 0.9em;
-  color: #666;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-footer a {
+article h2 {
   color: #007bff;
-  text-decoration: none;
 }
 
-footer a:hover {
+article a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+article a:hover {
   text-decoration: underline;
+}
+
+/* 页脚样式 */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 0.9em;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    text-align: left;
+  }
+
+  nav ul li {
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
