@@ -1,0 +1,43 @@
+/* 设置页面的背景颜色 */
+body {
+  background-color: #f8f9fa;  /* 轻微的灰色背景 */
+  font-family: 'Arial', sans-serif; /* 设置默认字体 */
+}
+
+/* 设置头部标题的样式 */
+h1, h2, h3 {
+  color: #333;  /* 深色标题 */
+}
+
+/* 调整文章页面的字体大小和行间距 */
+article {
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+/* 文章列表中的每篇文章 */
+article h2 a {
+  color: #007bff;  /* 蓝色的文章链接 */
+  text-decoration: none;
+}
+
+article h2 a:hover {
+  color: #0056b3;  /* 链接悬停时变暗 */
+}
+
+/* 设置页脚的样式 */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
