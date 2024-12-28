@@ -7,30 +7,30 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9;  /* 页面背景色 */
-  color: #333;  /* 页面文字颜色 */
+  background-color: #f4f4f9;
+  color: #333;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;  /* 保证页面高度至少为 100vh */
+  min-height: 100vh;
 }
 
-/* 主体内容 */
 main {
-  flex-grow: 1; /* 主体内容区占据剩余空间 */
+  flex-grow: 1;
   padding: 20px 0;
+  margin-top: 60px; /* 确保正文内容不被导航栏遮挡 */
 }
 
-/* 头部样式 */
 header {
-  background-color: #333;  /* 头部背景色 */
-  color: white;  /* 头部文字颜色 */
+  background-color: #333;
+  color: white;
   padding: 20px 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
+  height: 60px; /* 明确指定导航栏高度 */
 }
 
 header .logo {
@@ -51,7 +51,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;  /* 导航文字颜色 */
+  color: white;
   text-decoration: none;
   font-size: 1.1em;
   padding: 10px 15px;
@@ -59,14 +59,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #007bff;  /* 悬停时背景色 */
-  color: white;  /* 悬停时文字颜色 */
+  background-color: #007bff;
+  color: white;
 }
 
-/* 页脚样式 */
 footer {
-  background-color: #333;  /* 页脚背景色 */
-  color: white;  /* 页脚文字颜色 */
+  background-color: #333;
+  color: white;
   padding: 20px 0;
   text-align: center;
   margin-top: 50px;
@@ -74,12 +73,11 @@ footer {
 
 footer p {
   font-size: 1em;
-  color: white;  /* 确保页脚文字是白色的 */
+  color: white;
   margin: 0;
   padding: 10px 0;
 }
 
-/* 响应式设计 */
 @media (max-width: 768px) {
   header h1 {
     font-size: 1.5em;
