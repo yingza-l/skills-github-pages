@@ -1,22 +1,38 @@
-<!-- _layouts/about.html -->
 <!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <title>关于我</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    {% include header.html %}
 
-    <main class="about-page">
-        <div class="container">
-            <h1>{{ page.title }}</h1>
-            <div>{{ content }}</div>
-        </div>
-    </main>
+<!-- 引入公共头部 -->
+{% include header.html %}
 
-    {% include footer.html %}
+<main>
+    <div class="container">
+        <h1 id="关于我">关于我</h1>
+
+        <p>你好！我是yingza，一名热衷于技术和学习的开发者。</p>
+
+        <p>我在这里分享我的技术学习笔记，解决问题的经验，还有一些旅行和生活感悟。</p>
+
+        <p>希望我的博客能为你提供一些有用的信息和灵感。</p>
+
+        <p><strong>联系方式</strong>:</p>
+        <ul>
+          <li>GitHub：<a href="https://github.com/yingza-l">GitHub 主页</a></li>
+        </ul>
+    </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2024 yingza. 版权所有。</p>
+  </div>
+</footer>
+
 </body>
 </html>
