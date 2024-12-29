@@ -15,6 +15,50 @@ body {
     min-height: 100vh; /* 确保页面高度至少为视口高度 */
 }
 
+/* 头部样式 */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px; /* 适当调整头部高度 */
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* 让 logo 居中 */
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+}
+
+/* logo 样式 */
+header .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6em; /* 调整 logo 字体大小 */
+    font-weight: bold;
+}
+
+/* 导航菜单样式 */
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* 增加菜单项之间的间距 */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px; /* 增加内边距，确保点击区域合适 */
+    border-radius: 5px;
+    font-size: 1em; /* 增加字体大小 */
+}
+
+header nav ul li a:hover {
+    background-color: #007bff; /* 悬停时的背景色 */
+}
+
 /* 主体内容 */
 main {
     margin-top: 160px; /* 增加顶部间距，确保内容不被 header 遮挡 */
