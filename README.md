@@ -12,10 +12,8 @@
 
 ### 前提
 
-- 安装 [Ruby](https://www.ruby-lang.org/en/documentation/installation/) 和 [Jekyll](https://jekyllrb.com/docs/installation/)。
 
 ### 安装步骤
 
-1. 克隆仓库：
 
 
