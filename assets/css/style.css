@@ -1,4 +1,4 @@
-/* 全局样式 */
+/* 通用样式 */
 * {
     margin: 0;
     padding: 0;
@@ -6,121 +6,72 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f6f9; /* 淡灰背景 */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    background-color: #f4f4f1; /* 米色背景 */
     color: #333;
-    line-height: 1.6;
+}
+
+/* 左侧导航栏样式 */
+nav {
+    width: 250px; /* 固定宽度 */
+    background-color: #d8f5d2; /* 淡浅绿色背景 */
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* 页面最小高度 */
+    height: 100vh; /* 满屏高度 */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* 右侧阴影 */
 }
 
-/* 头部样式 */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background-color: #005f73; /* 深蓝色 */
-    color: white;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-}
-
-/* logo 样式 */
-header .logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
-/* 导航菜单样式 */
-header nav ul {
+nav ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
+    padding: 0;
 }
 
-header nav ul li a {
-    color: white;
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
     text-decoration: none;
-    padding: 8px 16px;
-    font-size: 1.1em;
+    color: #555;
+    font-size: 1.2em;
+    padding: 10px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
-header nav ul li a:hover {
-    background-color: #94d2bd; /* 淡绿灰色悬停 */
+nav ul li a:hover {
+    background-color: #c5e5c3; /* 悬停时的柔和绿色 */
+    color: #333;
 }
 
-/* 主体内容样式 */
+/* 右侧内容区域 */
 main {
     flex-grow: 1;
-    margin-top: 100px; /* 让顶部有空隙 */
-    padding: 40px 20px;
-    background-color: #ffffff; /* 白色背景 */
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 20px;
+    background-color: #fff; /* 内容区域背景为白色 */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* 右侧阴影 */
+    border-left: 2px solid #d8f5d2; /* 左侧边框为浅绿 */
 }
 
-main h1 {
-    font-size: 2.4em;
+h1 {
     color: #333;
+    font-size: 2.5em;
     margin-bottom: 20px;
-    text-align: center;
 }
 
-main p {
-    margin-bottom: 20px;
+p {
+    line-height: 1.8;
     font-size: 1.1em;
     color: #555;
+    margin-bottom: 15px;
 }
 
 /* 页脚样式 */
 footer {
-    background-color: #005f73; /* 与头部一致的深蓝色 */
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    font-size: 0.9em;
-}
-
-footer .social-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 1.4em;
-    transition: color 0.3s;
-}
-
-footer .social-links a:hover {
-    color: #94d2bd; /* 悬停时的颜色 */
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    main {
-        margin-top: 120px; /* 为小屏幕调整顶部间距 */
-    }
-
-    footer .social-links a {
-        font-size: 1.2em;
-    }
+    padding: 10px 0;
 }
