@@ -1,0 +1,22 @@
+<!-- _layouts/article.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+<body>
+    {% include header.html %}
+
+    <main class="article-page">
+        <div class="container">
+            <h1>{{ page.title }}</h1>
+            <div>{{ content }}</div>
+        </div>
+    </main>
+
+    {% include footer.html %}
+</body>
+</html>
