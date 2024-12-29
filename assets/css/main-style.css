@@ -1,0 +1,41 @@
+/* main 部分的样式 */
+main {
+    flex-grow: 1;
+    margin-top: 120px;
+    padding: 30px;
+    background-color: #f9f9fc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+main p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+main ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+main ul li {
+    margin-bottom: 10px;
+}
+
+main a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
