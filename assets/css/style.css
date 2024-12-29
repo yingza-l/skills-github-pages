@@ -15,98 +15,66 @@ body {
     min-height: 100vh; /* 确保页面高度至少为视口高度 */
 }
 
-.container {
-    max-width: 800px; /* 设置最大宽度 */
-    margin: 0 auto; /* 居中 */
-    padding: 20px; /* 添加内边距 */
+/* 主体内容 */
+main {
+    margin-top: 160px; /* 增加顶部间距，确保内容不被 header 遮挡 */
+    padding: 30px; /* 增加内边距 */
+    background-color: #fff; /* 背景颜色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 增加阴影效果 */
+    border-radius: 8px; /* 圆角 */
+    border: 1px solid #ddd; /* 添加灰色的边框 */
+    flex-grow: 1; /* 让 main 部分占据剩余的空间 */
 }
 
-/* 全局样式：头部 */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120px; /* 适当调整头部高度 */
-    background-color: #333;
-    color: white;
-    z-index: 1000;
-    display: flex;
-    justify-content: center; /* 让 logo 居中 */
-    align-items: center;
-    padding: 0 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+main h1 {
+    font-size: 2.5em; /* 增大标题字体 */
+    color: #333; /* 设置标题文字颜色 */
+    margin-bottom: 20px; /* 增加标题和内容之间的间距 */
 }
 
-/* logo 样式 */
-header .logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.6em; /* 调整 logo 字体大小 */
-    font-weight: bold;
+main p {
+    line-height: 1.8; /* 设置较大的行间距 */
+    color: #555; /* 文字颜色 */
+    margin-bottom: 15px; /* 段落间距 */
 }
 
-/* 导航菜单样式 */
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px; /* 增加菜单项之间的间距 */
+main ul {
+    margin-left: 20px; /* 列表项的左边距 */
+    color: #333;
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px; /* 增加内边距，确保点击区域合适 */
-    border-radius: 5px;
-    font-size: 1em; /* 增加字体大小 */
+main ul li {
+    margin-bottom: 10px; /* 列表项之间的间距 */
 }
 
-header nav ul li a:hover {
-    background-color: #007bff; /* 悬停时的背景色 */
+main a {
+    color: #007bff; /* 链接的文字颜色 */
+    text-decoration: none; /* 去掉下划线 */
+}
+
+main a:hover {
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
 }
 
 /* 页脚样式 */
 footer {
-    background: linear-gradient(to right, #333, #444); /* 背景渐变 */
+    background: #333; /* 页脚的背景色 */
     color: white;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0; /* 增加垂直间距 */
+    position: relative; /* 保持页脚在页面底部 */
+    width: 100%;
+    bottom: 0;
     border-top: 3px solid #007bff; /* 顶部加一道分隔线 */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 给页脚添加阴影 */
 }
 
 footer p {
     font-size: 0.9em;
-    color: white;
+    margin: 0;
 }
 
 footer p span {
     color: #007bff; /* 版权信息的年份和作者名字突出显示 */
     font-weight: bold;
-}
-
-footer .social-links {
-    margin-top: 10px;
-}
-
-footer .social-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-footer .social-links a:hover {
-    color: #007bff; /* 悬停时高亮 */
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column; /* 垂直排列菜单项 */
-        gap: 10px;
-    }
-
-    footer .social-links a {
-        font-size: 1em; /* 减小社交图标的大小 */
-    }
 }
