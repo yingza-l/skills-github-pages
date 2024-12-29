@@ -1,0 +1,21 @@
+/* assets/css/about.css */
+.about-main {
+    background-color: #ffffff; /* 背景颜色 */
+    padding: 20px; /* 内边距 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    border-radius: 8px; /* 圆角效果 */
+    line-height: 1.8; /* 行间距 */
+    margin-top: 40px; /* 上边距 */
+}
+
+.about-main h1 {
+    font-size: 2em; /* 标题字体大小 */
+    color: #333; /* 标题颜色 */
+    margin-bottom: 20px; /* 标题下边距 */
+}
+
+.about-main p {
+    font-size: 1.1em; /* 正文字体大小 */
+    color: #666; /* 文字颜色 */
+    margin-bottom: 15px; /* 段落下边距 */
+}
